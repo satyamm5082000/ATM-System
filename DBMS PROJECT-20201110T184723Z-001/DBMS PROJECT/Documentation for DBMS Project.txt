@@ -1,0 +1,80 @@
+Title 	              :      ATM SYSTEM
+
+
+Technology Used       :   Core Java, Java Swing, MySql, JDBC
+
+Platform Used         :   Wamp Server, Eclipse
+
+
+Description           :-
+
+In this project, we have demonstrated the working of an ATM Machine System. All transactions like deposit, withdraw, balance enquiry, change pin, mini statements, fastcash etc.  To store and retrieve the data of this project we have used MySql.
+
+
+We have implemented this project using java and one of it's library SWING. MySql and Java are connected through JDBC(Java database connectivity) one of the library of java . 
+
+
+Each class has their own individual operations and cannot interfere with another.  
+
+Note : To run this system we have to execute login.java class as the first execution.
+
+
+
+
+Tables created in MySql are as follows :-
+
+1 - Create Login table  :
+
+       		create table login(cardno varchar(20),pin varchar(5));
+
+2 - create Signup table :
+
+		create table signup(name varchar(25),fname varchar(25),date varchar(5),month varchar(8),year varchar(10),gender varchar(7),email varchar(45), marital varchar(12), address varchar(75),city varchar(25),pincode varchar		(7), state varchar(25),formno varchar(10));
+
+3 - create another table with name signup2 :
+
+		create table signup2(formno varchar(10),religion varchar(15), category varchar(15),income varchar(20),education varchar(15),occupation varchar(15),cnicno varchar(15),bisp varchar(20), senior varchar(5), existing varchar	 	 	(5));
+ 
+4 - create another table with name signup3 :
+
+		create table signup3(formno varchar(10), account varchar(30), cardno varchar(25),pin varchar(5), service_required varchar(100));
+
+5 - create table bank :
+
+		create table bank(pin varchar(10), deposit varchar(25), withdraw varchar(25), balance varchar(25), date varchar(20), time TIME);
+
+
+
+
+
+
+Classes created in project are as follows  :-
+
+1. conn.java     :    To provide connectivity between MySql and java Swing.
+
+2. login.java    :    It is a login page in which a user can login through his card number and pin.
+
+3. signup.java, signup2.java, signup3.java  : All these classes are used to create card number and pin for a new customer by taking or her general details.
+
+4. diposit.java  :   This class is used to deposit the amount to customer's account.
+
+5. withdrawl.java :  This class is used to withdraw the amount from the user's account with a maximum limit of 10,000 Rupees.
+
+6. pin.java        :   It is used to create new pin for an account.
+
+7. miniStatement.java :  This class is used to provide the details of the last 10 transactions of an account.
+
+8. FastCash.java :  This class provide various buttons to the user for the quick cash withdrawls.
+
+
+
+
+
+
+
+Submitted by :-                                                                                                                                Submitted to :-
+
+Satyam Mishra              2018KUCP1001													       Mr. Ankit Pulkit	
+Manoj                      2018KUCP1013													       ankit.pulkit2@gmail.com
+Pranav Sindura             2018KUCP1012
+Satya Dhwaj                2018KUCP1003
